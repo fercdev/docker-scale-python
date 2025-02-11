@@ -24,7 +24,7 @@ jobs:
           ssh -i  ~/.ssh/id_rsa root@67.207.84.219 << 'EOF'
             cd /root/codigo/docker-scale-python
             git pull origin master
-            docker-compose down
-            docker-compose up -d --build
+            docker compose down
+            docker compose up -d --build
           EOF
 
